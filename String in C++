@@ -1,0 +1,27 @@
+#include <iostream>
+#include <string>
+#include<vector>
+#include<algorithm>
+using namespace std;
+
+int main() {
+	// Complete the program
+    string str1;
+    string str2;
+    string str;
+    getline(cin,str1);
+    cin.clear();
+    getline(cin,str2);
+    cin.clear();
+    cout<<str1.size()<<" "<<str2.size()<<endl;
+    str=str1+str2;  
+    cout<<str<<endl;
+    reverse(str1.begin(),str1.end());
+    reverse(str1.begin(),str1.end());
+    int temp=0;
+    temp=str1[0];
+    str1[0]=str2[0];
+    str2[0]=temp;
+    cout<<str1<<" "<<str2;
+    return 0;
+}
