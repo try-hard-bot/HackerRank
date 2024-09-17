@@ -21,7 +21,7 @@ private:
 class HotelApartment : public HotelRoom {
 public:
     HotelApartment(int bedrooms, int bathrooms) 
-    : HotelRoom(bedrooms+2, bathrooms) {}//Changed here bedroom+2
+    : HotelRoom(bedrooms+2, bathrooms) {}//Changed here bedroom+2, since later we are only seeing the number of rooms and then adding the price to it so we have to increment by 2 rooms to add up to the value 100.
 
     int get_price() {
         return HotelRoom::get_price() + 100;
